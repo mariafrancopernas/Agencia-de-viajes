@@ -6,8 +6,6 @@
 - Danniella Naihara Dominguez Fernandez
 - Maria Franco Pernas
 - Jose Manuel Blanco Garcia
-- 
-
 ---
 
 ## 🎯 Tema del proyecto
