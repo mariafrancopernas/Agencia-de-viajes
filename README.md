@@ -5,7 +5,7 @@
 
 - Danniella Naihara Dominguez Fernandez
 - Maria Franco Pernas
-- Jose Manuel 
+- Jose Manuel Blanco Garcia
 - 
 
 ---
