@@ -11,7 +11,7 @@
 ---
 
 ## 🎯 Tema del proyecto
-(Describir el tema elegido para la web: tienda, blog, portfolio, etc.)
+
 Creamos una agencia de viajes, donde tendremos 3 ficheros html ; index(donde explicamos quienes somos y informacion de contacto ) ,destinos , servicios 
 
 ## 📁 Estructura del proyecto
