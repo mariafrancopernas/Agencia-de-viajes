@@ -30,6 +30,233 @@
    ---------------------------------------------------------------- */
 
 /* --- Página: index.html --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Para que el padding no agrande los elementos */
+}
+ 
+/* Fuente y color de fondo general */
+body {
+  font-family: Georgia, serif;
+  background-color: #f5f0eb;
+  color: #2c2c2c;
+}
+ 
+ 
+/* ============================================================
+   CABECERA (HEADER)
+   ============================================================ */
+ 
+header {
+  background-color: #1a3c4e; /* Azul oscuro, tipo mar profundo */
+  color: white;
+  padding: 20px 40px;
+}
+ 
+/* Contenedor del header: logo a la izquierda, nav a la derecha */
+.header-contenido {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Para que no se rompa en pantallas pequeñas */
+  gap: 15px;
+}
+ 
+/* Estilo del nombre/logo de la agencia */
+.logo {
+  font-size: 28px;
+  letter-spacing: 2px;
+  color: #e8d5b0; /* Dorado arena */
+}
+ 
+ 
+/* ============================================================
+   NAVEGACIÓN
+   ============================================================ */
+ 
+nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+ 
+/* Quitamos los puntos de la lista */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+ 
+/* Estilos de los enlaces del menú */
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 5px 0;
+  border-bottom: 2px solid transparent; /* Para el efecto hover */
+  transition: border-color 0.3s;
+}
+ 
+/* Efecto al pasar el ratón por un enlace */
+nav ul li a:hover {
+  border-bottom-color: #e8d5b0;
+}
+ 
+ 
+/* ============================================================
+   BUSCADOR
+   ============================================================ */
+ 
+.buscador {
+  display: flex;
+  gap: 8px;
+}
+ 
+.buscador input {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 200px;
+}
+ 
+.buscador button {
+  padding: 8px 16px;
+  background-color: #e8d5b0; /* Dorado arena */
+  color: #1a3c4e;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: bold;
+}
+ 
+.buscador button:hover {
+  background-color: #d4bc90;
+}
+ 
+ 
+/* ============================================================
+   CONTENIDO PRINCIPAL (MAIN)
+   ============================================================ */
+ 
+main {
+  max-width: 1100px;      /* No ocupa todo el ancho en pantallas grandes */
+  margin: 40px auto;      /* Centrado horizontalmente */
+  padding: 0 30px;
+}
+ 
+ 
+/* ============================================================
+   SECCIÓN DE BIENVENIDA
+   ============================================================ */
+ 
+.bienvenida {
+  text-align: center;
+  padding: 50px 20px;
+  border-bottom: 1px solid #d0c4b0;
+  margin-bottom: 40px;
+}
+ 
+.bienvenida h2 {
+  font-size: 32px;
+  color: #1a3c4e;
+  margin-bottom: 20px;
+}
+ 
+.bienvenida p {
+  font-size: 17px;
+  line-height: 1.7;   /* Espaciado entre líneas para mejor lectura */
+  color: #4a4a4a;
+  max-width: 650px;
+  margin: 0 auto 12px auto;
+}
+ 
+ 
+/* ============================================================
+   SECCIÓN DE TARJETAS
+   (Esta sección la compartirán los 3 HTML del proyecto)
+   Las tarjetas se colocarán en fila automáticamente
+   ============================================================ */
+ 
+.tarjetas {
+  display: flex;
+  flex-wrap: wrap;    /* Si no caben, bajan a la siguiente fila */
+  gap: 25px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+ 
+/* Estilo de cada tarjeta individual */
+.tarjeta {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+ 
+/* Imagen dentro de la tarjeta */
+.tarjeta img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover; /* La imagen cubre el espacio sin deformarse */
+}
+ 
+/* Texto dentro de la tarjeta */
+.tarjeta-info {
+  padding: 18px;
+}
+ 
+.tarjeta-info h3 {
+  font-size: 18px;
+  color: #1a3c4e;
+  margin-bottom: 8px;
+}
+ 
+.tarjeta-info p {
+  font-size: 14px;
+  color: #5a5a5a;
+  line-height: 1.6;
+}
+ 
+ 
+/* ============================================================
+   PIE DE PÁGINA (FOOTER)
+   ============================================================ */
+ 
+footer {
+  background-color: #1a3c4e;
+  color: #c8bba5;
+  text-align: center;
+  padding: 25px 20px;
+  font-size: 14px;
+}
+ 
+footer a {
+  color: #e8d5b0;
+  text-decoration: none;
+}
+ 
+footer a:hover {
+  text-decoration: underline;
+}
+ 
+ 
+/* ============================================================
+   PÁRRAFO DE CONTACTO (el que está fuera del footer)
+   ============================================================ */
+ 
+main + p,
+body > p {
+  background-color: #e8e0d4;
+  padding: 20px 40px;
+  font-size: 14px;
+  color: #4a4a4a;
+  line-height: 1.8;
+}
 
 
 /* --- Página: xxxxxx.html --- */
